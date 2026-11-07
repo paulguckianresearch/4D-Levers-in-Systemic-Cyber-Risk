@@ -1,4 +1,4 @@
-# Levers in Systemic Cyber Risk: code deposit v1.1
+# Levers in Systemic Cyber Risk
 
 Paul Guckian, Independent Researcher, London, United Kingdom. 7 November 2026.
 Companion to the manuscript "Levers in Systemic Cyber Risk: Which Matter, and When".
