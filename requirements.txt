@@ -1,0 +1,2 @@
+numpy>=1.26
+# Python 3.10 or later. No other dependency. Tested on Python 3.10.11 (Windows, numpy 1.26.4) and 3.13 (Linux, numpy 2.5.3).

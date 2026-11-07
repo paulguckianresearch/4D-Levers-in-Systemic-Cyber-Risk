@@ -1,0 +1,4 @@
+n_points,n_families,folds,r2_pairs,r2_pairs_family_holdout,r2_pairs_cv_mean,r2_pairs_cv_sd,r2_pairs_cv_min,r2_additive,r2_additive_family_holdout,r2_additive_cv_mean,r2_additive_cv_sd,r2_additive_cv_min,interaction_gain,kind,outcome
+316416,256,5,0.842152,-0.186665,-0.316886,0.276407,-0.674562,0.497544,-0.113965,-0.255814,0.176265,-0.475023,-0.0727,intrusion,fl
+316416,256,5,0.894261,-0.776552,-0.0420456,0.227742,-0.444189,0.535112,-1.05442,-0.0906523,0.108062,-0.228234,0.27787,intrusion,dl
+316416,256,5,0.906508,-0.189163,0.0171633,0.101373,-0.176544,0.627698,-0.607856,-0.00389612,0.183468,-0.313467,0.418694,intrusion,sl

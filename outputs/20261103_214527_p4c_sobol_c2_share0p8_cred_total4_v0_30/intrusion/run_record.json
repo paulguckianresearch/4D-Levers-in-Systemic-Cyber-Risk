@@ -1,0 +1,1623 @@
+{
+  "code_version": "PhDPaper4C v1.1 (2026-11-05, surface validation for Paper 4D; model as v0.26/v0.27)",
+  "spec_version": "Paper 4C Screening Methodology v0.3, pass 1 (ladder screen)",
+  "engine_base": "PhDPaper4B v0.23 engine and builders, lifted verbatim",
+  "mode": "sobol",
+  "utc": "2026-11-05T09:05:00+00:00",
+  "frozen_core_digest": "97dbae4714b278aa322588f69291cf10637fc1aaeedd434eb7590d9edbea3a09",
+  "model_digest": "d3f90805edfee3c78133981612ed9fc750e9193d08af7b0a69492eded4dc10ee",
+  "model_same_as_v0_18": false,
+  "frozen_core_verified": true,
+  "citable": false,
+  "note": "Screening or pilot pass on pilot seeds: finds which knobs matter. Not a confirmatory run.",
+  "screen": {
+    "topologies": [
+      "chain",
+      "star",
+      "mesh"
+    ],
+    "gammas": [
+      0,
+      1
+    ],
+    "spread": [
+      1,
+      16,
+      256
+    ],
+    "recovery": [
+      8
+    ],
+    "seeds_a": [
+      6101,
+      6102,
+      6103,
+      6104
+    ],
+    "seeds_b": [
+      6201,
+      6202,
+      6203,
+      6204
+    ],
+    "reps": 1,
+    "wirings": [
+      6001,
+      6002,
+      6003
+    ],
+    "neutral_wirings": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005,
+      6006,
+      6007,
+      6008,
+      6009,
+      6010,
+      6011,
+      6012
+    ],
+    "confirmatory_seeds_reserved": [
+      7101,
+      7201,
+      7202,
+      7301
+    ],
+    "threshold_percentile": 99.0
+  },
+  "starting_point": "neutral",
+  "attack_kind": "intrusion",
+  "neutral": {
+    "topology": "chain",
+    "K": 4,
+    "m": 25,
+    "ext_share": 0.05,
+    "supplied_x": 0.25,
+    "supplied_a": 0.25,
+    "iface_closed": 0.0,
+    "x_rate": 0.55,
+    "a_rate": 0.55,
+    "rate_var": 0.1,
+    "visibility": 1.0,
+    "blind_delay": 9999,
+    "conn": -1.0,
+    "chan": 0.15,
+    "g": 0.05,
+    "coverage": 1.0,
+    "masters": 2,
+    "dns": 1,
+    "zone_conn": 1.0,
+    "ad_reach": 1.0,
+    "managed": 1.0,
+    "hand_delay": 24,
+    "reconf_time": 2,
+    "ctl_link": 2,
+    "repl_delay": 8,
+    "n_chan": 3,
+    "chan_cov": 0.8,
+    "chan_span": 1.0,
+    "dmz": 1,
+    "stage_time": 0,
+    "ext_chan": 0.2,
+    "ext_ctl": 0.05,
+    "size": 100,
+    "server_share": 0.2,
+    "remote_share": 0.2,
+    "cloud_share": 0.3,
+    "seg_ep": 2,
+    "seg_sv": 2,
+    "ep_conn": 1.0,
+    "ep_sv": 0.3,
+    "cloud_link": 0.3,
+    "vpn": 0.15,
+    "ext_exploit": 0.2,
+    "n_ext": 4,
+    "ext_total": 0.4,
+    "ext_auth": 0.0,
+    "ceil_deliv": 60.0,
+    "ceil_edr": 80.0,
+    "ceil_ext": 60.0,
+    "chan_verify": 0.5,
+    "route_cred": 1,
+    "route_sup": 1,
+    "route_lat": 1,
+    "stages": 1,
+    "auth_cred": 70.0,
+    "auth_destroy": 50.0,
+    "auth_reconf": 100.0,
+    "route_esc": 1,
+    "c2_share": 0.8,
+    "objective": "kind",
+    "exfil_p": 0.5,
+    "val_sv": 10.0,
+    "dval_sv": 20.0,
+    "dval_exc": 10.0,
+    "exc_share": 0.02,
+    "flag_value": 0.8,
+    "queue": 1,
+    "t_clean": 1,
+    "t_cut": 1,
+    "queue_order": "value",
+    "auth_conn": 0.0,
+    "exfil_esc": 0.9,
+    "stage_down": 1,
+    "retry": 1,
+    "hunt": 1,
+    "sig_block": 0.99,
+    "steal_p": 0.5,
+    "rotate": 1,
+    "cred_ttl": 9999,
+    "handoff": 20,
+    "cred_total": -1,
+    "cred_only": "all",
+    "cred_cluster": 0,
+    "restore_rotate": 0,
+    "svc_view": 0,
+    "down_inert": 0,
+    "edr_site": 0,
+    "dns_site": 0,
+    "cloud_bad": 0.0,
+    "ext_bad": 0.5,
+    "kind": "intrusion",
+    "fixed_clock": 0.0,
+    "payload": 1,
+    "payload_delay": 1,
+    "dormant_share": 0.1,
+    "dormant_delay": 48,
+    "cap_spread": 0.5,
+    "node_reconf": 4,
+    "flag": 0.8,
+    "rollout": 0,
+    "concentration": 0.15,
+    "dependency": 0.0,
+    "ext_trust": 0.0,
+    "ext_conf": 0.0,
+    "ext_clock": 1.0,
+    "fanout": 0.25,
+    "inequality": 1.0,
+    "redundancy": 2,
+    "theta": "any",
+    "tac_cadence": 5,
+    "block_delay": 2,
+    "c_s": 20,
+    "obs_interval": 1,
+    "detect_latency": 0,
+    "dose": 0.0,
+    "tac_budget": 5.0,
+    "success": 0.8,
+    "def_cap": 80.0,
+    "cap_rule": "ratio",
+    "manual_scope": 1,
+    "auto_clean": 1,
+    "rebuild_time": 5,
+    "priority": 1,
+    "manual_delay": 2,
+    "lockout_delay": 9999,
+    "master_rebuild": 9999,
+    "retool_fix": 1,
+    "atk_budget": 1,
+    "atk_cap": 20.0,
+    "retool": 20,
+    "cap_drift": 0.0,
+    "horizon": 600,
+    "wiring_seed": 6001
+  },
+  "register": {
+    "ext_share": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Entry by Interface, phishing: share of endpoints reached",
+      "ladder": [
+        0.0,
+        0.05,
+        0.1,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "supplied_x": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Supplied Execution Pathway share",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "supplied_a": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Supplied Authority share",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "iface_closed": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Interface closed to Connections",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "x_rate": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Admission ease, Execution",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "a_rate": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Admission ease, Authority",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "rate_var": {
+      "layer": "node",
+      "who": "given",
+      "label": "Variation between nodes",
+      "ladder": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ]
+    },
+    "visibility": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Node visibility",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "blind_delay": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Blind-spot delay (9999 = never found)",
+      "ladder": [
+        10,
+        25,
+        50,
+        100,
+        200,
+        9999
+      ]
+    },
+    "chan": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Channel density",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "g": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Privileged credential exposure (g)",
+      "ladder": [
+        0.0,
+        0.05,
+        0.1,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "coverage": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Control Coverage",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "concentration": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Connections between segments of the same kind",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "fanout": {
+      "layer": "operator",
+      "who": "defender lever",
+      "label": "Fan-out",
+      "ladder": [
+        0.1,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "inequality": {
+      "layer": "operator",
+      "who": "defender lever",
+      "label": "Supplier inequality",
+      "ladder": [
+        0.0,
+        0.6,
+        1.2,
+        1.8,
+        2.4,
+        3.0
+      ]
+    },
+    "redundancy": {
+      "layer": "operator",
+      "who": "defender lever",
+      "label": "Redundancy (Cut)",
+      "ladder": [
+        1,
+        2,
+        3
+      ]
+    },
+    "theta": {
+      "layer": "operator",
+      "who": "defender lever",
+      "label": "Dependency threshold",
+      "ladder": [
+        "any",
+        "majority",
+        "all"
+      ]
+    },
+    "block_delay": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Block delay",
+      "ladder": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    "c_s": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Structural tempo (C_S)",
+      "ladder": [
+        5,
+        10,
+        20,
+        40,
+        80,
+        160
+      ]
+    },
+    "obs_interval": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Observation interval",
+      "ladder": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ]
+    },
+    "detect_latency": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Detection latency",
+      "ladder": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    "dose": {
+      "layer": "adaptation",
+      "who": "defender lever",
+      "label": "Adaptation dose",
+      "ladder": [
+        0.0,
+        0.01,
+        0.05,
+        0.1,
+        0.2,
+        0.4,
+        0.7,
+        1.0
+      ]
+    },
+    "tac_budget": {
+      "layer": "adaptation",
+      "who": "defender lever",
+      "label": "Defence capacity (responders per 40 nodes)",
+      "ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0
+      ]
+    },
+    "def_cap": {
+      "layer": "adaptation",
+      "who": "defender lever",
+      "label": "Defence Capability (1 to 100)",
+      "ladder": [
+        1.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0
+      ]
+    },
+    "manual_scope": {
+      "layer": "adaptation",
+      "who": "defender lever",
+      "label": "Manual team works only where automation cannot",
+      "ladder": [
+        0,
+        1
+      ]
+    },
+    "auto_clean": {
+      "layer": "adaptation",
+      "who": "defender lever",
+      "label": "Automated recovery (a block also cleans)",
+      "ladder": [
+        0,
+        1
+      ]
+    },
+    "rebuild_time": {
+      "layer": "adaptation",
+      "who": "defender lever",
+      "label": "Time to rebuild a node or restore a service",
+      "ladder": [
+        0,
+        2,
+        5,
+        10,
+        20,
+        40
+      ]
+    },
+    "manual_delay": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Time to investigate an alarm or a reported compromise",
+      "ladder": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    "t_clean": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Time to clean a node",
+      "ladder": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    "t_cut": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Time to cut a relation",
+      "ladder": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    "queue_order": {
+      "layer": "adaptation",
+      "who": "defender lever",
+      "label": "Order of the team's work",
+      "ladder": [
+        "value",
+        "fifo",
+        "degree"
+      ]
+    },
+    "atk_budget": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Attacker budget",
+      "ladder": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "atk_cap": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Attacker Capability (1 to 100)",
+      "ladder": [
+        1.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0
+      ]
+    },
+    "retool": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Source re-tooling period",
+      "ladder": [
+        5,
+        10,
+        20,
+        40,
+        80,
+        160
+      ]
+    },
+    "payload_delay": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Payload delay (usual)",
+      "ladder": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    "dormant_share": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Share of attacks that lie dormant",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "dormant_delay": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Dormant payload timer",
+      "ladder": [
+        6,
+        12,
+        24,
+        48,
+        96,
+        192
+      ]
+    },
+    "cap_spread": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Variation in capability between attacks",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "node_reconf": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Time held before the attacker can act on a node (9999 = never)",
+      "ladder": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        9999
+      ]
+    },
+    "fixed_clock": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Share of dormant attacks on one fixed clock",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "size": {
+      "layer": "system",
+      "who": "given",
+      "label": "Estate size (nodes)",
+      "ladder": [
+        50,
+        100,
+        200
+      ]
+    },
+    "server_share": {
+      "layer": "system",
+      "who": "given",
+      "label": "Share of the estate that is servers",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "remote_share": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Share of endpoints that are remote",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "cloud_share": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Share of servers in the cloud",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "seg_ep": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Segmentation of the internal endpoints",
+      "ladder": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "seg_sv": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Segmentation of the on-premises servers",
+      "ladder": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "ep_conn": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Connections between endpoints of a segment",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "ep_sv": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Connections from endpoints to servers",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "cloud_link": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Connections to the cloud",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "vpn": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Remote access from remote endpoints to servers",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "ext_exploit": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Entry by Interface, exploit: outward-facing share of servers",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "n_ext": {
+      "layer": "system of systems",
+      "who": "defender lever",
+      "label": "External parties (total reach held fixed)",
+      "ladder": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    "ext_total": {
+      "layer": "system of systems",
+      "who": "defender lever",
+      "label": "Share of the estate external parties reach",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "ext_auth": {
+      "layer": "system of systems",
+      "who": "defender lever",
+      "label": "Share of external parties holding Authority",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "ext_bad": {
+      "layer": "system of systems",
+      "who": "given",
+      "label": "Chance an external party is compromised",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "cloud_bad": {
+      "layer": "system of systems",
+      "who": "given",
+      "label": "Chance the cloud provider's hypervisor is compromised",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "ceil_deliv": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Ceiling of the software-delivery Channels",
+      "ladder": [
+        1.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0
+      ]
+    },
+    "ceil_edr": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Ceiling of the endpoint detection Channel",
+      "ladder": [
+        1.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0
+      ]
+    },
+    "ceil_ext": {
+      "layer": "system of systems",
+      "who": "defender lever",
+      "label": "Ceiling of an external supplier's Channel",
+      "ladder": [
+        1.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0
+      ]
+    },
+    "chan_verify": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Share of delivery Channels that verify their supplier",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "auth_cred": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Authority needed for Credential Access",
+      "ladder": [
+        1.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0
+      ]
+    },
+    "exfil_esc": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Chance Exfiltration succeeds after escalation (network control)",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "sig_block": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Reliability of a known signature on every agent",
+      "ladder": [
+        0.5,
+        0.8,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ]
+    },
+    "steal_p": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Chance a stealer takes a stored service credential",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "rotate": {
+      "layer": "adaptation",
+      "who": "defender lever",
+      "label": "Credential rotation on cleaning (0 none, 1 the node's, 2 the service's)",
+      "ladder": [
+        0,
+        1,
+        2
+      ]
+    },
+    "cred_ttl": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Ticks a stolen credential stays valid (9999 = until rotated)",
+      "ladder": [
+        10,
+        20,
+        40,
+        80,
+        160,
+        9999
+      ]
+    },
+    "restore_rotate": {
+      "layer": "adaptation",
+      "who": "defender lever",
+      "label": "Invalidate a Control Plane's stolen credentials at its restoration (v0.25)",
+      "ladder": [
+        0,
+        1
+      ]
+    },
+    "svc_view": {
+      "layer": "adaptation",
+      "who": "defender lever",
+      "label": "The estate's own zone-less services within the team's view (v0.26)",
+      "ladder": [
+        0,
+        1
+      ]
+    },
+    "cred_cluster": {
+      "layer": "system",
+      "who": "given",
+      "label": "Placement of named services' credentials: random, whole population, matched distinct, one node (v0.25)",
+      "ladder": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "handoff": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Campaign: ticks of stealer payloads before the intrusion begins",
+      "ladder": [
+        0,
+        10,
+        20,
+        40,
+        80,
+        160
+      ]
+    },
+    "c2_share": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Command and Control: share of nodes with a route out",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "exfil_p": {
+      "layer": "node",
+      "who": "defender lever",
+      "label": "Chance an Exfiltration attempt succeeds",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "objective": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Does the payload exfiltrate",
+      "ladder": [
+        "steal",
+        "destroy"
+      ]
+    },
+    "val_sv": {
+      "layer": "system",
+      "who": "given",
+      "label": "Node value of a server (an endpoint is 1)",
+      "ladder": [
+        1.0,
+        5.0,
+        10.0,
+        16.0,
+        20.0,
+        40.0
+      ]
+    },
+    "dval_sv": {
+      "layer": "system",
+      "who": "given",
+      "label": "Data value of a server (an endpoint is 1)",
+      "ladder": [
+        1.0,
+        5.0,
+        10.0,
+        20.0,
+        40.0,
+        80.0
+      ]
+    },
+    "exc_share": {
+      "layer": "system",
+      "who": "given",
+      "label": "Share of endpoints with exceptional data value",
+      "ladder": [
+        0.0,
+        0.02,
+        0.05,
+        0.1,
+        0.2,
+        0.4
+      ]
+    },
+    "edr_site": {
+      "layer": "system of systems",
+      "who": "defender lever",
+      "label": "Endpoint detection sited with a third party (0 inside, 1 outside)",
+      "ladder": [
+        0,
+        1
+      ]
+    },
+    "dns_site": {
+      "layer": "system of systems",
+      "who": "defender lever",
+      "label": "DNS sited with a third party (0 inside, 1 outside)",
+      "ladder": [
+        0,
+        1
+      ]
+    },
+    "zone_conn": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Connections between servers of a segment",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "ad_reach": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Active Directory reach",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "managed": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Managed share of the control",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "hand_delay": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Hand-update delay for an unmanaged control",
+      "ladder": [
+        2,
+        6,
+        12,
+        24,
+        48,
+        96
+      ]
+    },
+    "reconf_time": {
+      "layer": "time",
+      "who": "attacker",
+      "label": "Reconfigure time after a controller falls",
+      "ladder": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    "ctl_link": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Controller link (0 none, 1 neighbours, 2 all)",
+      "ladder": [
+        0,
+        1,
+        2
+      ]
+    },
+    "repl_delay": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Replication delay between controllers (9999 = never)",
+      "ladder": [
+        0,
+        2,
+        4,
+        8,
+        16,
+        32,
+        9999
+      ]
+    },
+    "dns": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "DNS as an estate-wide Channel over the other Channels",
+      "ladder": [
+        0,
+        1
+      ]
+    },
+    "n_chan": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Software-delivery channels",
+      "ladder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "chan_cov": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Delivery channel coverage",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "chan_span": {
+      "layer": "system",
+      "who": "defender lever",
+      "label": "Delivery channels shared across zones",
+      "ladder": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    "stage_time": {
+      "layer": "time",
+      "who": "defender lever",
+      "label": "Staged rollout on delivery channels",
+      "ladder": [
+        0,
+        2,
+        4,
+        8,
+        16,
+        32
+      ]
+    },
+    "cap_drift": {
+      "layer": "attacker",
+      "who": "attacker",
+      "label": "Security drift (capability gained per 100 ticks)",
+      "ladder": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        1.0
+      ]
+    }
+  },
+  "conn_ladder": {
+    "mesh": [
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      10.0,
+      12.0
+    ],
+    "chain": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "star": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ]
+  },
+  "e8": {
+    "spread": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "recovery": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "tau": 0.3,
+    "lo_max": 0.4,
+    "hi_min": 0.6,
+    "seeds": [
+      4101,
+      4201,
+      4202,
+      4301
+    ],
+    "R": 10,
+    "horizon": 600,
+    "n_estate": 40,
+    "mesh_degree": 6,
+    "strat_cycle": 20,
+    "tac_budget": 5,
+    "reconf_budget": 30,
+    "atk_budget": 1,
+    "def_success_prob": 0.8,
+    "expected_bistable_rows": {
+      "chain": 6,
+      "mesh": 6,
+      "star": 0
+    }
+  },
+  "python": "3.10.11",
+  "numpy": "1.26.4",
+  "outcome_keys": {
+    "f": "final share of the estate compromised",
+    "fa": "final share of all systems compromised",
+    "ks": "share of systems more than half compromised at the end",
+    "pk": "largest share of the estate compromised at any time",
+    "ar": "mean share compromised over the run",
+    "tm": "tick a majority was first compromised (-1 never)",
+    "tc": "tick the first system fell (-1 never)",
+    "tk": "tick the first master controller fell (-1 never)",
+    "nk": "master controllers captured",
+    "mh": "share of masters held at the end",
+    "dh": "share of systems whose defence plane is held",
+    "ih": "share of systems whose identity plane is held",
+    "fl": "1 if either flag was raised (collapse)",
+    "tf": "tick of the flag (-1 none)",
+    "r1": "share of held nodes taken by Lateral Movement",
+    "r2": "share taken over a Channel",
+    "r3": "share taken through a Control Plane",
+    "im": "share of node-ticks observed reconfigured",
+    "ni": "payloads that infected a node",
+    "nr": "payloads repelled",
+    "sv": "share of the horizon the estate stood",
+    "hv": "share of nodes a stealer harvested",
+    "pl": "placements (unused)",
+    "ex": "share of nodes under a captured Control Plane at the end",
+    "al": "alarms raised",
+    "r0": "share of held nodes taken by Initial Access over an Interface",
+    "wf": "which flag: 1 nodes, 2 value",
+    "fv": "1 if the value flag ended the run",
+    "sl": "revenue share lost per tick to nodes the attack took out (to the stop)",
+    "sd": "revenue share lost per tick to nodes the defender isolated",
+    "dl": "share of data value exfiltrated",
+    "dn": "share of nodes out of service at the end",
+    "ne": "Privilege Escalation attempts",
+    "nw": "escalations won",
+    "qm": "largest backlog of waiting work",
+    "qw": "mean ticks a job waited before a responder took it",
+    "d24": "data loss at tick 24 (-1 if stopped before)",
+    "s24": "service loss to tick 24",
+    "c24": "share compromised at tick 24",
+    "d72": "as d24 at 72",
+    "s72": "as s24 at 72",
+    "c72": "as c24 at 72",
+    "d168": "as d24 at 168",
+    "s168": "as s24 at 168",
+    "c168": "as c24 at 168",
+    "nh": "nodes found by hunting on an alarm",
+    "nc": "Control Planes held at the end",
+    "nt": "Control Planes ever taken",
+    "cs": "service credentials stolen: distinct (node, service) pairs entered in the attacker's store (stealer: on harvest, with probability steal_p, no Authority condition; hands-on attacker: at Credential Access, with certainty)",
+    "cu": "services taken by presenting a stolen credential from a held node at re-tooling or at the campaign's handoff",
+    "cv": "services whose stolen credential is still in the store and valid at the end (rotation or expiry removes it)",
+    "js": "jobs the team started",
+    "ro": "team utilisation: busy responder-ticks over available responder-ticks",
+    "gc": "share of the estate in its largest Connection component (realised wiring)",
+    "kd": "mean Connection degree of the estate",
+    "kx": "exposed credential placements realised in the wiring"
+  },
+  "protocol": {
+    "wirings": [
+      6801,
+      6802
+    ],
+    "seeds": [
+      6901,
+      6902
+    ],
+    "reps": 1,
+    "spread": [
+      8
+    ],
+    "recovery": [
+      8
+    ],
+    "kinds": [
+      "intrusion",
+      "implant",
+      "campaign",
+      "malware",
+      "stealer"
+    ],
+    "sobol_kinds": [
+      "intrusion",
+      "implant",
+      "campaign"
+    ],
+    "morris_traj": 20,
+    "sobol_n": 256,
+    "incidental": 0.02,
+    "boot": 2000,
+    "boot_seed": 20261019,
+    "keep_mu": 0.05,
+    "keep_sigma": 0.05
+  },
+  "dry": false,
+  "n_tasks": 632832,
+  "varied": [
+    "server_share",
+    "a_rate",
+    "iface_closed",
+    "atk_cap",
+    "tac_budget",
+    "ext_exploit",
+    "manual_delay",
+    "x_rate",
+    "chan_cov",
+    "ext_auth",
+    "coverage",
+    "zone_conn",
+    "remote_share",
+    "ext_total",
+    "n_chan",
+    "chan_span",
+    "theta",
+    "seg_sv",
+    "cloud_share",
+    "atk_budget",
+    "t_cut",
+    "n_ext",
+    "ep_conn",
+    "node_reconf",
+    "blind_delay",
+    "supplied_x",
+    "chan",
+    "redundancy",
+    "payload_delay",
+    "visibility",
+    "retool",
+    "size",
+    "rebuild_time",
+    "ext_bad",
+    "fanout",
+    "ctl_link",
+    "ext_share",
+    "t_clean",
+    "def_cap",
+    "c_s",
+    "concentration",
+    "dns",
+    "cap_drift",
+    "rate_var",
+    "vpn",
+    "auth_cred",
+    "seg_ep",
+    "stage_time",
+    "cloud_link",
+    "ep_sv",
+    "queue_order",
+    "cap_spread",
+    "managed",
+    "reconf_time",
+    "obs_interval",
+    "exfil_p",
+    "objective",
+    "dval_sv"
+  ],
+  "kept": [
+    "server_share",
+    "a_rate",
+    "iface_closed",
+    "atk_cap",
+    "tac_budget",
+    "ext_exploit",
+    "manual_delay",
+    "x_rate",
+    "chan_cov",
+    "ext_auth",
+    "coverage",
+    "zone_conn",
+    "remote_share",
+    "ext_total",
+    "n_chan",
+    "chan_span",
+    "theta",
+    "seg_sv",
+    "cloud_share",
+    "atk_budget",
+    "n_ext",
+    "node_reconf",
+    "blind_delay",
+    "supplied_x",
+    "chan",
+    "redundancy",
+    "payload_delay",
+    "visibility",
+    "retool",
+    "size",
+    "rebuild_time",
+    "ext_bad",
+    "fanout",
+    "ctl_link",
+    "ext_share",
+    "t_clean",
+    "def_cap",
+    "dns",
+    "cap_drift",
+    "auth_cred",
+    "seg_ep",
+    "stage_time",
+    "cloud_link",
+    "queue_order",
+    "cap_spread",
+    "reconf_time",
+    "obs_interval",
+    "exfil_p",
+    "objective"
+  ],
+  "fixed": {
+    "cred_total": 4,
+    "c2_share": 0.8
+  }
+}

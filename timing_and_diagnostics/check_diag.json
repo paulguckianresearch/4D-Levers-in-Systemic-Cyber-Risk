@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    "1 loop fidelity: 8 exact outcome and trace matches against TimingEngine.run()",
+    "2 checkpoint exact: 4 snapshot continuations identical to the parent and to a fresh run; also with svc_view=1 and master_rebuild=5 (view map re-keyed)",
+    "3 branch isolation: undisturbed branch equals parent; equal disturbances give equal branches",
+    "4 cadence survives: attack period and mobilisation gate hold after a restore",
+    "5 forced capture: excluded set equals the plane's directing reach for every Control Plane",
+    "6 disturbance scope: burst lands on clean, reachable, ordinary nodes at stage 1"
+  ],
+  "seconds": 6.2,
+  "hashes": {
+    "engine_4c_v027.py": "724a97c347ecbe00fa50661f738920eb1a74e31180bf951161c66a1406e13e43",
+    "timing_engine.py": "0e1ef005846d73f4ded80efc89f6e18d6edb53a1ef7a98bfcb86caaf89ec2e77",
+    "diag_engine.py": "c602179a01e0c1a30c75893512f594f467ee78701e91feae4d5d2c51adac4b5e",
+    "diag_common.py": "5fe11e7e14fdebb863e38ffbeab0bc26746eb2e1c83d179aa51c683865094d51",
+    "check_diag.py": "88cd98b8f41a7f4f65ee431273e85b3c3d12a82aff6853f7f418d23a0a0bd5d1"
+  }
+}

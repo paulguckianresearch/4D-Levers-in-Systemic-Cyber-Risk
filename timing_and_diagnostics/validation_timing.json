@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": [
+    "12 exact baseline outcome comparisons across four attack profiles",
+    "24 full-route attack runs: all attack hooks obey cadence and half-compromise is delayed",
+    "Passive, alarm and signature fixtures: all reactive hooks gated; deferred signatures released only at mobilisation",
+    "End-to-end lag checks: investigation, hunt-origin and containment cannot act before mobilisation"
+  ],
+  "propagation": [
+    {
+      "attack_period": 1,
+      "restricted_time_to_half_mean": 139.25,
+      "not_reached": 5
+    },
+    {
+      "attack_period": 2,
+      "restricted_time_to_half_mean": 159.25,
+      "not_reached": 6
+    },
+    {
+      "attack_period": 4,
+      "restricted_time_to_half_mean": 165.625,
+      "not_reached": 7
+    }
+  ],
+  "seconds": 4.576526242,
+  "limitations": "Opportunity cadence is not uniform rescaling of wall-time timers. Lag is one-off mobilisation, not repeated per-node delay. Preventive repulsion stays active."
+}

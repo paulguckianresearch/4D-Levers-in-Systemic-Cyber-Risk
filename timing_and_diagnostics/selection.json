@@ -1,0 +1,66 @@
+{
+  "selection_status": "exploratory; selected after timing validation on old grid, baseline timings now changed so probabilities are not assumed to transfer",
+  "method": "nearest 50% within each of 0/4/16 exposure; nearest 2% and 98% controls; largest late initial-state gap, ties by configuration id",
+  "configurations": [
+    {
+      "id": "c0005",
+      "role": "boundary_exposure_0",
+      "old_grid_collapse": 0.45,
+      "cred_total": 0,
+      "ad_reach": 0.2,
+      "tac_budget": 2.0,
+      "coverage": 0.6,
+      "zone_conn": 1.0
+    },
+    {
+      "id": "c0275",
+      "role": "boundary_exposure_4",
+      "old_grid_collapse": 0.5083333333333333,
+      "cred_total": 4,
+      "ad_reach": 0.2,
+      "tac_budget": 6.0,
+      "coverage": 0.6,
+      "zone_conn": 1.0
+    },
+    {
+      "id": "c0602",
+      "role": "boundary_exposure_16",
+      "old_grid_collapse": 0.5,
+      "cred_total": 16,
+      "ad_reach": 0.6,
+      "tac_budget": 6.0,
+      "coverage": 1.0,
+      "zone_conn": 1.0
+    },
+    {
+      "id": "c0303",
+      "role": "contained_control",
+      "old_grid_collapse": 0.0166666666666666,
+      "cred_total": 4,
+      "ad_reach": 0.2,
+      "tac_budget": 10.0,
+      "coverage": 1.0,
+      "zone_conn": 0.0
+    },
+    {
+      "id": "c0432",
+      "role": "collapse_control",
+      "old_grid_collapse": 0.9791666666666669,
+      "cred_total": 4,
+      "ad_reach": 1.0,
+      "tac_budget": 6.0,
+      "coverage": 0.2,
+      "zone_conn": 0.0
+    },
+    {
+      "id": "c0681",
+      "role": "initial_state_gap_candidate",
+      "old_grid_collapse": 0.4541666666666667,
+      "cred_total": 16,
+      "ad_reach": 1.0,
+      "tac_budget": 6.0,
+      "coverage": 1.0,
+      "zone_conn": 0.0
+    }
+  ]
+}

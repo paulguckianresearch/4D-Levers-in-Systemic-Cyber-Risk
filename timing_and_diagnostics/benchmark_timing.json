@@ -1,0 +1,10 @@
+{
+  "runs": 216,
+  "seconds": 21.600042813000073,
+  "workers": 4,
+  "already_saved": 0,
+  "planned_pilot_runs": 864,
+  "linear_local_estimate_seconds": 86.40017125200029,
+  "compact_results_bytes": 398036,
+  "caution": "Hosted CPU, four workers; not a guaranteed laptop ETA. Small exploratory sample."
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Levers in Systemic Cyber Risk: analysis code, timing revision and mechanism-validation package",
+  "upload_type": "software",
+  "version": "1.2",
+  "license": "MIT",
+  "language": "eng",
+  "creators": [
+    {"name": "Guckian, Paul", "affiliation": "Independent Researcher, London, United Kingdom"}
+  ],
+  "description": "<p>Companion code to the manuscript <em>Levers in Systemic Cyber Risk: Which Matter, and When</em>. Analysis code over a frozen simulated estate model (model digest d3f90805edfee3c7, deposited at doi:10.5281/zenodo.23669511): a global sensitivity programme (Morris screen with exposure strata, two-pass Sobol decomposition with a pre-set incidental rule, chunked pair-and-square response surface, data-derived groups); the surface's validation (hold-out by base-row family, additive-against-pairwise comparison, ridge-penalty scan, a fresh-draw surface mode in which every configuration receives its own estate and random stream, a noise-ceiling estimator, a paired worked example and a by-route breakdown of the headline contrasts); a declared exploratory timing revision over the unchanged engine; and a mechanism-validation package (exact checkpoints and branches, disturbance and capacity interventions, forced plane capture, three audits). The model itself is not changed by anything here. The outputs folder holds the analysis outputs the manuscript quotes; the large per-run result files are archived separately.</p>",
+  "keywords": ["systemic cyber risk", "global sensitivity analysis", "Sobol indices", "Morris screening", "response surface validation", "Cyber Triangle", "simulation"],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.23669511", "relation": "isDerivedFrom", "resource_type": "software"},
+    {"identifier": "10.5281/zenodo.23669054", "relation": "references", "resource_type": "dataset"}
+  ],
+  "access_right": "open"
+}
